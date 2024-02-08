@@ -6,13 +6,12 @@
 }
 .container{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(135deg, #153677,#4e085f);
     padding: 1rem;
 }
 .todo{
-    width: 100%;
-    max-width: 540px;
+    width: 70%;
     background: white;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
@@ -49,7 +48,7 @@ button{
     border: none;
     cursor: pointer;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px 55px;
     border-radius: 40px;
     font-size: 16px;
     color: #fff;
@@ -96,4 +95,39 @@ ul li span{
 }
 ul li span:hover{
     background: #edeef0;
+}
+@media (max-width: 600px){
+    input{
+        padding: 5px;        
+        font-size: 15px;
+    }
+    button{
+        padding: 16px 30px;
+        border-radius: 40px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 527px){
+    input{
+        padding: 5px;
+        font-size: 12px;
+    }
+    button{
+        padding: 16px 30px;
+        font-size: 13px;     
+    }
+}
+@media (max-width: 476px){
+    .container{
+        min-width: 429px;
+    }
+    input{
+        padding: 3px;
+        font-size: 11px;
+    }
+    button{
+        padding: 16px 30px;
+        border-radius: 40px;
+        font-size: 11px;
+    }
 }
