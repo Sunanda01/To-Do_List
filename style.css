@@ -13,9 +13,10 @@
 .todo{
     width: 70%;
     background: white;
-    margin: 100px auto 20px;
+    /* margin: 100px auto 20px; */
     padding: 40px 30px 70px;
     border-radius: 10px;
+    height: auto;
 }
 .todo h1{
     color: #002765;
@@ -124,15 +125,15 @@ ul li span:hover{
 }
  @media (max-width: 448px){
      .container{
-        min-width: 394px;
+        min-width: 415px;
     } 
         input{
-        padding: 10px;
+        padding: 9px;
         font-size: 11px;
         flex: 1;
     }
     button{
-        padding: 7px 9px;
+        padding: 9px 11px;
         font-size: 10px;
     }
 } 
