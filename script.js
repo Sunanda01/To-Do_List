@@ -1,6 +1,6 @@
 const inputbox=document.getElementById("input-box");
 const listcontainer=document.getElementById("list-container");
-
+const inputbox1=document.querySelector("#input-box");
 function addtask(){
     if(inputbox.value === ''){
         alert("You must write something");
@@ -16,6 +16,12 @@ function addtask(){
     inputbox.value="";
     savedata();
 }
+
+inputbox1.addEventListener("keyup", (event) => {
+      if(event.keyCode === 13) {
+          addtask();
+      }
+  })
 
 listcontainer.addEventListener("click",function(e){
     if(e.target.tagName==="LI"){
